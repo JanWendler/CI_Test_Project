@@ -5,4 +5,13 @@
 #ifndef CI_TEST_PROJECT_MAIN_H
 #define CI_TEST_PROJECT_MAIN_H
 
+///
+/// \param a value a
+/// \param b value b
+/// \return value a + value b
+int sum(int a, int b)
+{
+    return a+b;
+}
+
 #endif //CI_TEST_PROJECT_MAIN_H

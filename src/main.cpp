@@ -5,12 +5,7 @@
 #include "main.h"
 #include <iostream>
 
-int sum(int a, int b)
-{
-    return a+b;
-}
-
 int main ()
 {
-    std::cout<<"Hello World"<<std::endl;
+    std::cout<<"Hello World! 1 + 2 = "<<sum(1, 2)<<std::endl;
 }

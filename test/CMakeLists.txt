@@ -9,7 +9,6 @@ set(SOURCE_FILES
 add_executable(tests
         ${SOURCE_FILES}
         )
-add_library(test ${SOURCE_FILES})
 
 target_include_directories(tests
         PUBLIC
