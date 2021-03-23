@@ -46,7 +46,8 @@ jobs:
         run: ls
 
       - name: Run
-        run: cd /build
+        run: |
+          cd /build
           ls
           main
 
