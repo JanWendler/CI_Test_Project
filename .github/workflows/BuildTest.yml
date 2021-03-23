@@ -46,7 +46,9 @@ jobs:
         run: ls
 
       - name: Run
-        run: ./main
+        run: cd /build
+          ls
+          main
 
       - name: Test
         working-directory: ${{github.workspace}}/build
