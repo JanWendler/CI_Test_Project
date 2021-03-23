@@ -43,13 +43,7 @@ jobs:
         run: cmake --build . --config $BUILD_TYPE
 
       - name: List files
-        run: ls
-
-      - name: Run
-        run: |
-          cd build
-          ls
-          main
+        run: ls -R
 
       - name: Test
         working-directory: ${{github.workspace}}/build
