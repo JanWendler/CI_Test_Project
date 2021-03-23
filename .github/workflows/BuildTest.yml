@@ -43,7 +43,7 @@ jobs:
         run: cmake --build . --config $BUILD_TYPE
 
       - name: Run
-        run: /build/bin/main.exe
+        run: ${{github.workspace}}/build/bin/main
 
       - name: Test
-        run: /build/test/tests.exe
+        run: ${{github.workspace}}/build/test/tests
