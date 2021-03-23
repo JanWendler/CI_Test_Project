@@ -14,4 +14,13 @@ int sum(int a, int b)
     return a+b;
 }
 
+///
+/// \param a value a
+/// \param b value b
+/// \return value a * value b
+float multi(float a, float b)
+{
+    return a*b;
+}
+
 #endif //CI_TEST_PROJECT_MAIN_H
