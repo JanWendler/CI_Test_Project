@@ -19,6 +19,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Checkout submodules
+      # Init the submodules required for this project
       uses: textbook/git-checkout-submodule-action@master
 
     - name: Create Build Environment
