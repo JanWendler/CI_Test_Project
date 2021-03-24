@@ -11,7 +11,7 @@
 /// \return value a + value b
 int sum(int a, int b)
 {
-    return a+b;
+  return a + b;
 }
 
 ///
@@ -20,7 +20,7 @@ int sum(int a, int b)
 /// \return value a * value b
 float multi(float a, float b)
 {
-    return a*b;
+  return a * b;
 }
 
-#endif //CI_TEST_PROJECT_MAIN_H
+#endif//CI_TEST_PROJECT_MAIN_H

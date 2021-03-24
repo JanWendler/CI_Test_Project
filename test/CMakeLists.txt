@@ -2,26 +2,18 @@ cmake_minimum_required (VERSION 3.10.3)
 
 include(GoogleTest)
 
-set(SOURCE_FILES
-        test.cpp
-        )
+add_subdirectory(lib/googletest)
 
-add_executable(tests
-        ${SOURCE_FILES}
-        )
+set(SOURCE_FILES test.cpp)
 
-target_include_directories(tests
-        PUBLIC
-        ../src
-        lib/googletest/googletest/include
-        )
+add_executable(tests ${SOURCE_FILES})
+
+target_compile_options(tests PRIVATE -Werror -Wall -Wextra)
+
+target_include_directories(tests PUBLIC ../src lib/googletest/googletest/include)
 
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
-target_link_libraries(tests
-        PUBLIC
-        gtest
-        gtest_main
-        )
+target_link_libraries(tests PUBLIC gtest gtest_main)
 
 gtest_discover_tests(tests)
