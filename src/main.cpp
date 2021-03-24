@@ -7,5 +7,5 @@
 
 int main()
 {
-  std::cout << "Hello World! 1 + 2 = " << sum(1, 2) << std::endl;
+  std::cout << "Hello World! 1 * 2 = " << multi(1, 2) << std::endl;
 }
