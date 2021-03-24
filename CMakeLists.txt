@@ -37,6 +37,7 @@ if(ENABLE_TESTING)
   include(CTest)
   enable_testing()
   message("Building Tests. Be sure to check out test/constexpr_tests for constexpr testing")
+  set(GOOGLETEST_VERSION 1.10.0)
   add_subdirectory(test)
 endif()
 
